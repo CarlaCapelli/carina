@@ -4,61 +4,16 @@ h1 {
   font-size: 40px;
   font-family: cursive;
 }
-.contenedor {
-  height: 200px;
-  width: 400px;
+p {
+  margin: auto;
+}
+.divProductos {
   display: flex;
-  margin: auto;
-  flex-direction: row;
-  justify-content: center;
-  border: 0px solid;
-}
-.div1 {
-  height: 220px;
-  width: 600px;
+  justify-content: space-around;
   border: 1px solid black;
-  margin: 0px;
-  padding: 0px;
-  background-color: rgb(174, 205, 206, 235, 238);
 }
-.div2 {
-  height: 220px;
-  width: 400px;
-  border: 1px solid black;
-  margin: 0px;
-  padding: 0px;
-  background-color: rgb(174, 205, 206, 235, 238);
-}
-.div3 {
-  height: 220px;
-  width: 200px;
-  border: 1px solid black;
-  margin: 0px;
-  padding: 0px;
-  background-color: rgb(174, 205, 206, 235, 238);
-}
-.divCompra {
-  height: 300px;
-  width: 300px;
+input {
   margin: auto;
-  margin: auto;
-}
-.color {
-  color: fuchsia;
-  font-size: 21px;
-}
-.p {
-  color: mediumorchid;
-  font-size: 20px;
-}
-.boton {
-  width: 100%;
-  background-color: #1f53c5;
-  border: none;
-  padding: 10px;
-  color: white;
-  margin: 12px 0;
-  font-size: 12px;
 }
 body {
   background-image: url("img/fond.jpg");
