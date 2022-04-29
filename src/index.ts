@@ -29,6 +29,7 @@ let cargarProductos = () => {
   }
 };
 let comprarProductos = () => {
+  let sumaTotal: number = 0;
   for (let i: number = 0; i < lista.length; i++) {
     let boton = document.getElementById("btn" + [i]);
     boton.addEventListener("click", () => {
@@ -40,7 +41,7 @@ let comprarProductos = () => {
         alert("No tenemos ese stock");
       } else {
         suma = suma + precio[i] * cantidadSeleccionada;
-
+        sumaTotal = sumaTotal + suma;
         console.log(
           "Cantidad: " + cantidadSeleccionada + "  de " + lista[i],
           "el precio  es $" + precio[i]
@@ -50,6 +51,10 @@ let comprarProductos = () => {
       }
     });
   }
+  let btnComprar = document.getElementById("comprar");
+  btnComprar.addEventListener("click", () => {
+    console.log("La suma total es de" + sumaTotal);
+  });
 };
 cargarProductos();
 comprarProductos();
