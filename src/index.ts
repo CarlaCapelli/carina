@@ -53,7 +53,7 @@ let comprarProductos = () => {
   }
   let btnComprar = document.getElementById("comprar");
   btnComprar.addEventListener("click", () => {
-    console.log("La suma total es de" + sumaTotal);
+    console.log("La suma total es de $" + sumaTotal);
   });
 };
 cargarProductos();
